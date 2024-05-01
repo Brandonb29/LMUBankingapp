@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding -->
     <meta charset="UTF-8">
+    <!-- Set viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
     <title>Account Details</title>
 </head>
 <body>
+    <!-- Main heading with dynamic account number -->
     <h1>Details for Account {{account_number}}</h1>
+    <!-- Placeholder for account details -->
+    <!-- Defend against XSS by ensuring that user input is properly escaped -->
+    <!-- Validate user input to prevent SQL injection and ensure it matches expected format -->
+    <!-- Handle errors gracefully by providing a message if details are unavailable -->
     <p>Details coming soon</p>
+    <!-- Link back to dashboard -->
+    <!-- Defend against XSS by ensuring that user input is properly escaped -->
+    <!-- Defend against CSRF by using POST requests for sensitive operations -->
     <p><a href="/dashboard">Back to Dashboard</a></p>
 </body>
 </html>
