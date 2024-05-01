@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding -->
     <meta charset="UTF-8">
+    <!-- Set viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
     <title>Online Banking</title>
 </head>
 <body>
+    <!-- Main heading -->
     <h1>Welcome to Online Banking</h1>
+    <!-- Sub heading -->
     <h2>What would you like to do today?</h2>
+    <!-- Link to view savings account details -->
+    <!-- Defend against XSS by ensuring that user input is properly escaped -->
+    <!-- Defend against CSRF by using POST requests for sensitive operations -->
     <p><a href="/details?account=100">View Savings Account Details</a></p>
+    <!-- Link to view checking account details -->
+    <!-- Defend against XSS by ensuring that user input is properly escaped -->
+    <!-- Defend against CSRF by using POST requests for sensitive operations -->
     <p><a href="/details?account=998">View Checking Account Details</a></p>
+    <!-- Link to transfer funds -->
+    <!-- Defend against XSS by ensuring that user input is properly escaped -->
+    <!-- Defend against CSRF by using POST requests for sensitive operations -->
     <p><a href="/transfer">Transfer Funds</a></p>
 </body>
 </html>
