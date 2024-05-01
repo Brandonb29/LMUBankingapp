@@ -11,14 +11,23 @@
 <body>
     <!-- Main heading -->
     <h1>Make a Transfer</h1>
-    <!-- Placeholder for transfer implementation -->
+
+    <!-- Transfer form -->
     <!-- Defend against XSS by ensuring that user input is properly escaped -->
-    <!-- Defend against CSRF by using POST requests for sensitive operations -->
-    <p>Transfer implementation coming soon</p>
+    <form method="POST" action="/transfer">
+        <pre>
+        From   <input name="from" />
+        To     <input name="to" />
+        Amount <input name="amount" />
+               <input type="submit" value="Transfer">
+        </pre>
+        <!-- WARNING: There is a CSRF vulnerability here!!! -->
+        <!-- WE WILL BE FIXING IT LATER.                      -->
+    </form>
+
     <!-- Link back to dashboard -->
     <!-- Defend against XSS by ensuring that user input is properly escaped -->
     <!-- Defend against CSRF by using POST requests for sensitive operations -->
     <p><a href="/dashboard">Back to Dashboard</a></p>
 </body>
 </html>
-
