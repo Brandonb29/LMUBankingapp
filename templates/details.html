@@ -9,13 +9,16 @@
     <title>Account Details</title>
 </head>
 <body>
-    <!-- Main heading with dynamic account number -->
-    <h1>Details for Account {{account_number}}</h1>
-    <!-- Placeholder for account details -->
+    <!-- Greet the user -->
     <!-- Defend against XSS by ensuring that user input is properly escaped -->
-    <!-- Validate user input to prevent SQL injection and ensure it matches expected format -->
-    <!-- Handle errors gracefully by providing a message if details are unavailable -->
-    <p>Details coming soon</p>
+    <p>Hi, {{ user }}</p>
+    
+    <!-- Main heading with dynamic account number -->
+    <h1>Details for Account {{ account_number }}</h1>
+    <!-- Display account balance -->
+    <!-- Defend against XSS by ensuring that user input is properly escaped -->
+    <p>Your balance is {{ balance }}</p>
+    
     <!-- Link back to dashboard -->
     <!-- Defend against XSS by ensuring that user input is properly escaped -->
     <!-- Defend against CSRF by using POST requests for sensitive operations -->
